@@ -55,7 +55,6 @@ const Game = (() => {
   let currentPlayerIndex;
   let gameOver;
   const start = () => {
-    gameOver = false;
     players = [
       createPlayer(document.querySelector("#player1").value, "x"),
       createPlayer(document.querySelector("#player2").value, "O"),

@@ -1,6 +1,7 @@
 #gameboard {
   display: flex;
   flex-wrap: wrap;
+
   justify-content: center;
   align-items: center;
   height: 300px;
@@ -10,7 +11,7 @@
   display: flex;
   flex-wrap: wrap;
   float: left;
-  border: 1px solid black;
+  border: 5px solid burlywood;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,10 +19,16 @@
   height: 30%;
   text-align: center;
   font-size: 80px;
+  color: brown;
 }
 
 #controls,
 #message {
   text-align: center;
   margin: 20px 0;
+}
+
+h1 {
+  text-align: center;
+  color: aquamarine;
 }
