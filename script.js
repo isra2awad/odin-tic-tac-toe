@@ -72,7 +72,7 @@ const Game = (() => {
 
     Gameboard.update(index, players[currentPlayerIndex].mark);
     if (
-      checkForWin(Gameboard.getGameboard(), players[currentPlayerIndex].mark)
+      checkForWin(Gameboard.getGameboard()) //players[currentPlayerIndex].mark//)
     ) {
       gameOver = true;
       Displaycontroller.renderMessage(
@@ -91,6 +91,7 @@ const Game = (() => {
       Gameboard.update(i, "");
       Gameboard.render();
       document.querySelector("#message").innerHTML = "";
+      gameOver = false;
     }
   };
   return {
